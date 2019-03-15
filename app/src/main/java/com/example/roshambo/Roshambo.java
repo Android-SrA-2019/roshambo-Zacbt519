@@ -1,9 +1,8 @@
-
+package com.example.roshambo;
 
 import java.util.Random;
 
-public class Rochambo {
-
+public class Roshambo {
     public static final int ROCK = 0;
     public static final int PAPER = 1;
     public static final int SCISSOR = 2;
@@ -19,7 +18,7 @@ public class Rochambo {
     private Random rand;
 
 
-    public Rochambo() {
+    public Roshambo() {
         rand = new Random();
         gameMove = rand.nextInt(2);
         playerMove = NONE;
@@ -31,7 +30,7 @@ public class Rochambo {
      *
      * @param playerMove  ROCK, PAPER, or SCISSOR are valid arguments
      */
-     public void playerMakesMove(int playerMove) {
+    public void playerMakesMove(int playerMove) {
 
         if ( Integer.compareUnsigned(playerMove , NONE) > 0)
             throw new IllegalArgumentException("not a valid player move");
@@ -85,6 +84,4 @@ public class Rochambo {
 
         return DRAW; //shouldn't get here
     }
-
-
 }

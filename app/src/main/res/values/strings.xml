@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">Roshambo</string>
+    <string name="opponent_move">Opponent Move</string>
+    <string name="your_move">Your Move</string>
+    <string name="win">You win!</string>
+    <string name="lose">You lose!</string>
+    <string name="draw">Draw</string>
+</resources>
